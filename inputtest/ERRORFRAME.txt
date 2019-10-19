@@ -1,0 +1,17 @@
+command (-e decode the errorframe)
+# can-server -t A -x -e -q can0,0:0,#FFFFFFFF
+
+(2018-10-22 20:55:55.825684)  can0  RX - -  2000008A   [8]  00 00 02 00 00 00 00 00   ERRORFRAME
+        lost-arbitration{at bit 0}
+        protocol-violation{{frame-format-error}{}}
+        bus-error
+(2018-10-22 20:55:55.825769)  can0  RX - -  2000008C   [8]  00 04 02 00 00 00 00 61   ERRORFRAME
+        controller-problem{rx-error-warning}
+        protocol-violation{{frame-format-error}{}}
+        bus-error
+        error-counter-tx-rx{{0}{97}}
+(2018-10-22 20:55:55.825798)  can0  RX - -  2000008C   [8]  00 10 02 00 00 00 00 81   ERRORFRAME
+        controller-problem{rx-error-passive}
+        protocol-violation{{frame-format-error}{}}
+        bus-error
+        error-counter-tx-rx{{0}{129}

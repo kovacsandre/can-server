@@ -1,0 +1,16 @@
+# Plus one packet to reset the output to 0x00
+
+# ip -det -stat link show can0
+6: can0: <NOARP,UP,LOWER_UP,ECHO> mtu 16 qdisc pfifo_fast state UNKNOWN mode DEFAULT group default qlen 10
+    link/can 
+    can state ERROR-ACTIVE (berr-counter tx 0 rx 0) restart-ms 0 
+	  bitrate 1000000 sample-point 0.750 
+	  tq 83 prop-seg 4 phase-seg1 4 phase-seg2 3 sjw 1
+	  sunxi_can: tseg1 1..16 tseg2 1..8 sjw 1..4 brp 1..64 brp-inc 1
+	  clock 24000000
+	  re-started bus-errors arbit-lost error-warn error-pass bus-off
+	  0          0          0          0          0          0         
+    RX: bytes  packets  errors  dropped overrun mcast   
+    2000002    1000001  0       0       0       0      
+    TX: bytes  packets  errors  dropped carrier collsns 
+    2000002    1000001  0       0       0       0  
